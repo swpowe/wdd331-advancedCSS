@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: #faebd7;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+}
+
+header {
+  background-color: #6495ed;
+  color: #faebd7;
+  padding: 30px;
+  text-align: right;
+  font-size: 2vh;
+}
+header h1 {
+  padding-bottom: 20px;
+}
+ul {
+  padding-top: 10px;
+}
+li {
+  padding: 5px;
+  list-style: none;
+}
+
+body {
+  background-color: #faebd7;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  background-color: #faebd7;
+}
+
+/* #region nav links */
+/* nav a,
+nav a:visited {
+  color: #faebd7;
+  text-decoration: none;
+} */
+
+nav a:active {
+  color: #deb887;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* #endregion */
+
+/* #region page links */
+article p a,
+article p a:visited {
+  color: #6495ed;
+  text-decoration: none;
+}
+
+article p a:active {
+  color: #deb887;
+}
+
+article p a:hover {
+  text-decoration: underline;
+}
+/* #endregion */
+
+/* #region article links */
+article h2 a,
+article h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+article h2 a:active {
+  color: #deb887;
+}
+
+article h2 a:hover {
+  color: #6495ed;
+  text-decoration: underline;
+}
+/* #endregion */
+
+.post-date {
+  color: gray;
+}
+
+article {
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+img {
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+  width: 60%;
+}
+
+/* 
+
+ x The font for the headlines is Lora and can be found on Google fonts
+ x The font list for the body copy is: Helvetica, Arial, sans-serif
+ x The blue color is #6495ED.
+ x The background color used for <main> and the color of the text on the blue sidebar is #FAEBD7
+
+ x Navigation links should behave thus: normal and visited: #FAEBD7 and no underline , active: #DEB887, hover: white and underlined
+ x Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
+ x Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined
+
+*/
