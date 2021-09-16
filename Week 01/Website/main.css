@@ -5,16 +5,6 @@
   padding: 0;
 }
 
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  color: #faebd7;
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3 {
@@ -24,18 +14,29 @@ h3 {
 header {
   background-color: #6495ed;
   color: #faebd7;
-  padding: 30px;
+  /* padding: 65px 30px; */
   text-align: right;
-  font-size: 2vh;
+  /* font-size: 3.5vh; */
 }
 header h1 {
-  padding-bottom: 20px;
+  padding-right: 10%;
+  padding-top: 71px;
+  padding-bottom: 31px;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #faebd7;
+  height: 2px;
+  border: none;
 }
 ul {
-  padding-top: 10px;
+  padding-right: 10%;
+  padding-bottom: 66px;
 }
 li {
-  padding: 5px;
+  padding-top: 20px;
   list-style: none;
 }
 
@@ -47,6 +48,75 @@ body {
 main {
   background-color: #faebd7;
 }
+
+.post-date {
+  color: gray;
+  padding-bottom: 15px;
+}
+
+article {
+  margin-top: 45px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: white;
+  padding: 25px;
+}
+
+img {
+  padding-top: 95px;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+article p {
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+
+/* #region Media Queries for Large */
+
+@media screen and (min-width: 385px) {
+  header {
+    background-color: pink;
+    top: 0;
+    left: 0;
+    /* height: 971px; */
+    min-height: 210%;
+    width: 340px;
+    position: absolute;
+  }
+
+  main {
+    top: 0;
+    left: 341px;
+    position: absolute;
+  }
+
+  article {
+    min-width: 800px;
+    margin-top: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+    padding: 25px;
+  }
+}
+
+/* endregion */
+
+/* #region default links not needed?? */
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: #faebd7;
+  text-decoration: none;
+}
+
+/* #endregion */
 
 /* #region nav links */
 /* nav a,
@@ -97,23 +167,6 @@ article h2 a:hover {
   text-decoration: underline;
 }
 /* #endregion */
-
-.post-date {
-  color: gray;
-}
-
-article {
-  margin: 10px;
-  background-color: white;
-  padding: 20px;
-}
-
-img {
-    padding-top: 30px;
-    display: block;
-    margin: 0 auto;
-  width: 60%;
-}
 
 /* 
 
