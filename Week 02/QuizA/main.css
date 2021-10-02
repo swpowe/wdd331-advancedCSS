@@ -1,0 +1,68 @@
+/* form >p {
+    background-color: blue;
+} */
+
+/* form p {
+    background-color: blue;
+} */
+
+/* span.help {
+    background-color: blue;
+} */
+
+/* p + fieldset {
+    background-color: blue;
+} */
+
+/* fieldset:nth-child(1) {
+    background-color: blue;
+} */
+
+/* fieldset:first-of-type {
+    background-color: blue;
+} */
+
+/* fieldset:nth-of-type(1) {
+    background-color: blue;
+} */
+
+/* fieldset + fieldset {
+    background-color: blue;
+} */
+
+/* fieldset {
+    background-color: blue;
+} */
+
+/* fieldset:not(:first-of-type) {
+    background-color: blue;
+} */
+
+/* input:invalid {
+    background-color: red;
+} */
+
+/* title *= fieldset {
+    back
+} */
+
+/* *[title*=fieldset] {
+    background-color: blue;
+} */
+
+/* li:nth-child(5n) {
+    background-color: blue;
+} */
+
+/* label ~ input {
+    color: pink;
+    background-color: blue;
+} */
+
+span.help {
+  background-color: blue;
+}
+
+fieldset[title=fieldset2] > p + p {
+  background-color: blue;
+}

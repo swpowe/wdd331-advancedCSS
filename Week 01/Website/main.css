@@ -1,3 +1,7 @@
+/* Advanced CSS WDD 331 */
+/* Spencer Powell */
+/* https://byui.instructure.com/courses/160514/assignments/7237273/submissions/378781 */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
 
 * {
@@ -14,9 +18,7 @@ h3 {
 header {
   background-color: #6495ed;
   color: #faebd7;
-  /* padding: 65px 30px; */
   text-align: right;
-  /* font-size: 3.5vh; */
 }
 header h1 {
   padding-right: 10%;
@@ -63,15 +65,15 @@ article {
 }
 
 img {
-  padding-top: 65px; /* changed */
+  padding-top: 65px;
   display: block;
   margin: 0 auto;
-  width: 202px; /* changed */
+  width: 202px;
 }
 
 article p {
   padding-top: 30px;
-  padding-bottom: 10px; /* changed */
+  padding-bottom: 10px;
   
 }
 
