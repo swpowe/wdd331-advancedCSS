@@ -1,0 +1,16 @@
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #ec3336; // Cornflower Blue - Action color
+$color-2: #dc292c; // Dark Blue
+$color-3: #f3879a; // Red
+$color-4: #f9c3cd; // light grey
+$color-5: #ffffff; // white
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3; // red
+
+// fonts
+$primary-font: 'Merriweather', sans-serif;
+$secondary-font: 'Lato', sans-serif;
