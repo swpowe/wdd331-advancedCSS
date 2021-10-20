@@ -1,13 +1,40 @@
-@import 'partials/variables';
-
+@import "partials/variables";
 main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 section {
-    border: 1px solid black;
-    border-radius: 10px;
-    color: pink;
-    height: 1.4 * $card-width;
-    width: $card-width;
+  border: 1px solid rgba($color: #656565, $alpha: 0.2);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba($color: #656565, $alpha: 0.2);
+//   color: pink;
+  margin: 20px;
+  height: 1.4 * $card-width;
+  width: $card-width;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pattern {
+  background-color: rgba(254, 25, 25, 0.666);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+}
+
+path {
+    fill: #fff;
+    stroke: orange;
+    stroke-width: 20;
+  }
+
+  .card-svg {
+    //   background-color: blue;
+  }

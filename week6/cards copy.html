@@ -12,80 +12,9 @@
     <main>
       <section class="card">
         <div class="card-pattern">
-          <svg width="100%" height="100%" class="card-svg">
-            <!-- define pattern -->
-            <defs>
-              <pattern
-                id="mypattern"
-                patternUnits="userSpaceOnUse"
-                x="2"
-                y="2"
-                width="37%"
-                height="37%"
-                fill="url(#diagonalHatch)"
-                fill-opacity=".4"
-              >
-                <!-- use a pattern to fill rather than solid yellow -->
-                <rect
-                  x="0"
-                  y="0"
-                  width="25%"
-                  rx="10"
-                  ry="10"
-                  height="25%"
-                  class="rectangle"
-                  stroke="darkred"
-                />
-                <!-- <circle
-                  cx="16"
-                  cy="23"
-                  r="4"
-                  fill="white"
-                  stroke="darkred"
-                  stroke-width="2"
-                /> -->
-              </pattern>
-              <pattern
-                id="diagonalHatch"
-                patternUnits="userSpaceOnUse"
-                width="4"
-                height="4"
-              >
-                <path
-                  d="M-3,3 l3,-3
-                    M0,4 l4,-4
-                    M3,5 l2,-2"
-                  style="stroke: black; stroke-width: 0.5"
-                />
-              </pattern>
-            </defs>
-
-            <!-- use pattern in a circle  CHange to my card div rect-->
-            <svg>
-              <g id="playing-card">
-                <g id="outer-rect">
-                  <rect
-                    x="0"
-                    y="0"
-                    width="20%"
-                    height="20%"
-                    fill="blue"
-                    stroke-width="1"
-                    stroke="orange"
-                  />
-                  <g id="inner-card">
-                    <rect
-                      x="0"
-                      y="0"
-                      width="100%"
-                      height="100%"
-                      fill="url(#mypattern)"
-                      stroke-width="1"
-                      stroke="orange"
-                    />
-                  </g>
-                </g>
-            </svg>
+          <svg width="80%" height="80%">
+            <rect width="100%" height="100%" fill="url(images/svgs/background-pattern.svg#mypattern)" />
+            
           </svg>
         </div>
       </section>
