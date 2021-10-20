@@ -1,0 +1,13 @@
+@import 'partials/variables';
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+section {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: pink;
+    height: 1.4 * $card-width;
+    width: $card-width;
+}
