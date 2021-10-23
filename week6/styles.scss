@@ -1,4 +1,4 @@
-@import "partials/variables";
+$card-width: 30vw;
 main {
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ section {
 }
 
 .card-pattern {
-  background-color: rgba(254, 25, 25, 0.666);
+  background-color: rgba(254, 25, 25, 0.667);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +33,4 @@ path {
     fill: #fff;
     stroke: orange;
     stroke-width: 20;
-  }
-
-  .card-svg {
-    //   background-color: blue;
   }

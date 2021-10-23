@@ -27,6 +27,5 @@
         "!Select sequence",
         "!Split",
         "!Split sequence"
-    ],
-    "liveServer.settings.port": 5501
+    ]
 }

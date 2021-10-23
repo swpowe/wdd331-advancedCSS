@@ -1,0 +1,40 @@
+#lock {
+    position: relative;
+    width: 18em;
+    height: 13em;
+    border: 3.5em solid red;
+    border-radius: 2em;
+    border-right-width: 7.5em;
+    border-left-width: 7.5em;
+    top: 10em;
+    font-size: 8px;
+    margin: 0 0 6rem 0;
+    box-sizing: border-box;
+}
+
+#lock::before {
+    content: "";
+    position: absolute;
+    border: 2.5em solid red;
+    width: 14em;
+    height: 12em;
+    left: 50%;
+    margin-left: -7em;
+    top: -12em;
+    border-top-left-radius: 7em;
+    border-top-right-radius: 7em;
+    box-sizing: border-box;
+}
+
+#lock::after {
+    content: "";
+    box-sizing: border-box;
+    position:absolute;
+    border: 1em solid red;
+    width: 5em;
+    height: 8em;
+    border-radius: 2.5em;
+    top: -1em;
+    left: 50%;
+    margin-left: -2.5em;
+}
