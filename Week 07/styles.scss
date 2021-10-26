@@ -4,6 +4,15 @@ $card-height: $card-width * 1.4;
 $font-size-number: $card-width * 0.1;
 $icon-size: $card-width / 5;
 
+//mix-ins
+@mixin col($span-num) {
+  flex: 0 0 12.5% * $span-num;
+}
+
+@mixin offset($offset-num) {
+  margin-left: 12.5% * $offset-num;
+}
+
 *,
 *:before,
 *:after {
@@ -50,7 +59,10 @@ $icon-size: $card-width / 5;
 
 .row {
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-between;
+  height: 100%;
 }
 
 .cell {
@@ -59,13 +71,20 @@ $icon-size: $card-width / 5;
 }
 
 .col-1 {
-  flex: 0 0 12.5%;
+  @include col(1);
 }
 
 .col-2 {
-  flex: 0 0 50%;
+  @include col(2)
 }
 
 .col-8 {
-  flex: 0 0 100%;
+  @include col(8)
+}
+
+.offset-1 {
+  @include offset(1)
+}
+.offset-2 {
+  @include offset(2)
 }
