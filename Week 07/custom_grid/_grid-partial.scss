@@ -1,0 +1,33 @@
+//variables to setup basic size and shape of the card and pips
+$card-width: 40vw;
+$card-height: $card-width * 1.4;
+$font-size-number: $card-width * 0.1;
+$icon-size: $card-width / 5;
+
+$num-columns: 8;
+$one-column: 100% / $num_columns;
+$loop-start: 1;
+$loop-end: $num-columns + 1;
+
+//mix-ins
+@mixin col($span-num) {
+  flex: 0 0 $one-column * $span-num;
+}
+
+@mixin offset($offset-num) {
+  margin-left: $one-column * $offset-num;
+}
+
+//make column classes
+@for $index from $loop-start to $loop-end {
+  .col-#{$index} {
+    @include col($index);
+  }
+}
+
+//make offset classes
+@for $index from $loop-start to $loop-end {
+  .offset-#{$index} {
+    @include offset($index);
+  }
+}
