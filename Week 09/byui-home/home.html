@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <title>Brigham Young University - Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   </head>
@@ -71,13 +73,41 @@
     </header>
     <main>
       <section id="left">
-        <div id="covid-banner"></div>
         <div id="main-video"></div>
         <div id="carousel"></div>
+        <div id="news-room">
+          <h3>Newsroom</h3>
+        </div>
       </section>
       <section id="right">
-        <div id="information"></div>
-        <div id="resources"></div>
+        <div id="information">
+          <label for="info"></label>
+          <select name="info" id="info">
+            <option value="" disabled selected>Get information for:</option>
+            <option value="future-students">Future Students</option>
+            <option value="current-students">Current Students</option>
+            <option value="employees">Employees</option>
+            <option value="parents-family">Parents and Family</option>
+            <option value="visitors">Visitors</option>
+          </select>
+        </div>
+        <div id="resources">
+          <h3>Resources</h3>
+          <div id="resource-list">
+            <a href="https://www.byui.edu/admissions/apply">Apply Now</a>
+            <a href="https://www.byui.edu/financial-aid">Financial Aid</a>
+            <a href="http://www.byui.edu/catalog/#/programs"
+              >Degress and Programs</a
+            >
+            <a href="https://www.byui.edu/housing">Student Housing</a>
+            <a href="https://www.byui.edu/financial-aid/cost-of-attendance"
+              >Tuition and Fees</a
+            >
+            <a href="https://www.byui.edu/student-records/academic-deadlines"
+              >Academic Deadlines</a
+            >
+          </div>
+        </div>
         <div id="important-dates"></div>
       </section>
     </main>

@@ -1068,7 +1068,7 @@ span {
   color: #b4b3b5;
   background-color: #eaeaea;
   width: 100vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
 }
 
@@ -1080,7 +1080,127 @@ span {
 }
 
 figure {
-  padding: 20px;
+  padding: 20px 10px;
+}
+
+#carousel figcaption {
+  color: #056cb6;
+  border: 1px solid #b4b3b5;
+  margin-top: -3px;
+  padding: 5px;
+}
+
+.news-item {
+  border-top: 2px solid #b4b3b5;
+  display: flex;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+#news-room > h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.news-item img {
+  display: none;
+}
+
+.news-item button {
+  color: white;
+  background-color: #727272;
+  border-radius: 5px;
+  display: inline;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#right {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .site-banner__right {
+    display: none;
+  }
+
+  form {
+    display: inline;
+  }
+
+  main {
+    display: flex;
+    flex: 1;
+  }
+
+  #carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  #carousel figure {
+    margin: 30px 0;
+  }
+
+  .news-item img {
+    display: inline;
+    max-width: 15%;
+    padding-right: 10px;
+  }
+
+  .news-item button {
+    display: none;
+  }
+
+  #right {
+    display: inline;
+    min-width: 20%;
+    margin: 20px;
+  }
+
+  #information select {
+    background-color: #eaeaea;
+    border-radius: 2px;
+    font-weight: 700;
+    padding: 5px;
+    min-width: 90%;
+  }
+
+  #resources {
+    margin: 20px 0;
+  }
+
+  #resources h3 {
+    background-color: #727272;
+    color: white;
+    font-weight: 799;
+    max-width: 90%;
+    padding: 5px 10px;
+  }
+
+  #resource-list {
+    border: 2px solid #b4b3b5;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  #resource-list a {
+    border-top: 2px solid #b4b3b5;
+    padding: 10px;
+  }
+
+  #resource-list a:nth-child(1) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 1007px) {
+  #main-video figure img {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

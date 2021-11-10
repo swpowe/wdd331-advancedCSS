@@ -69,24 +69,23 @@ const data = {
   ],
 };
 
-const covidBanner = document.getElementById("covid-banner");
 const mainVideo = document.getElementById("main-video");
 const carousel = document.getElementById("carousel");
 const information = document.getElementById("information");
 const resources = document.getElementById("resources");
 const importantDates = document.getElementById("important-dates");
 
-// Set Main Image
+// #region Set Main Image
 let figure = document.createElement('figure');
 let video = document.createElement('img');
 video.src = data.hero.main;
 
 figure.appendChild(video)
 mainVideo.appendChild(figure)
+// #endregion
 
 
-
-// Set images in Carousel Section
+// #region Set images in Carousel Section
 data.hero.subSections.forEach(e => {
     let anchor = document.createElement('a');
     anchor.href = e.link
@@ -105,3 +104,51 @@ data.hero.subSections.forEach(e => {
     
     carousel.appendChild(anchor);
 });
+// #endregion
+
+// #region Newsroom
+let news = document.getElementById('news-room');
+
+data.news.forEach(e => {
+    let mainDiv = document.createElement('div');
+    let div = document.createElement('div');
+    let img = document.createElement('img');
+    let a = document.createElement('a')
+    let date = document.createElement('h3');
+    let title = document.createElement('p');
+    let excerpt = document.createElement('p');
+    let button = document.createElement('button');
+
+    img.src = e.image;
+    a.href = e.link;
+    date.innerText = e.date;
+    title.innerText = e.title;
+    excerpt.innerText = e.excerpt;
+    button.textContent = 'READ MORE';
+
+    div.appendChild(date);
+    div.appendChild(title);
+    div.appendChild(excerpt);
+    div.appendChild(button)
+
+    mainDiv.classList.add('news-item');
+    div.classList.add('col');
+    mainDiv.appendChild(a);
+    mainDiv.appendChild(img);
+    mainDiv.appendChild(div)
+
+    news.appendChild(mainDiv)
+});
+
+
+// #endregion
+
+// #region Set Calendar
+let select = document.getElementById('important-dates');
+
+data.calendar.forEach(e => {
+    let option = document.createElement('option')
+option.value = e.date
+});
+
+// #endregion

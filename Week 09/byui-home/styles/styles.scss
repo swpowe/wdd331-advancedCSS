@@ -1,6 +1,7 @@
 @import "typography";
 @import "icons";
 
+// #region Core CSS
 $sm-break: 48em;
 // colors
 $dark-gray: #727272;
@@ -9,6 +10,9 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
+
+// sizes
+$side-width: 90%;
 
 // Utility classes
 *,
@@ -40,18 +44,9 @@ img {
   border: 0;
 }
 
-// My SCSS
+// #endregion
 
-// .site-banner__right {
-//   height: 20%;
-//   color: white;
-// }
-
-// .ste-banner__left {
-//   height: 20%;
-
-// }
-
+// #region Mobile First
 .site-banner {
   background-color: #056cb6;
   display: flex;
@@ -84,7 +79,7 @@ span {
   color: $med-gray;
   background-color: $light-gray;
   width: 100vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $light-gray;
   margin-bottom: 20px;
 }
 
@@ -95,17 +90,156 @@ span {
   padding: 10px;
 }
 
-// main section - left
-// #main-video { //!! not sure I need this
-//   display: flex;
-//   justify-content: center;
-// }
-
 figure {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
-// Hide the main video for small screens
-// #main-video {
-//   display: none;
-// }
+#carousel figcaption {
+  color: $byui-blue;
+  border: 1px solid $med-gray;
+  margin-top: -3px;
+  padding: 5px;
+}
+
+// #region News Item
+.news-item {
+  border-top: 2px solid $med-gray;
+  // background-color: gray;
+  display: flex;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+#news-room > h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.news-item img {
+  display: none;
+}
+
+.news-item button {
+  color: white;
+  background-color: $dark-gray;
+  border-radius: 5px;
+  display: inline;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+// #endregion
+
+// #region Entire Right Side Hidden
+#right {
+  display: none;
+}
+
+// #endregion
+
+// #endregion
+
+// #region Media Medium Screen
+@media screen and (min-width: 640px) {
+  body {
+    // background-color: blue;
+  }
+
+  .site-banner__right {
+    display: none;
+  }
+
+  form {
+    display: inline; //!! small only
+  }
+
+  main {
+    display: flex;
+    flex: 1;
+  }
+  // #region Carousel
+  #carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  #carousel figure {
+    margin: 30px 0;
+    // padding: 20px;
+  }
+
+  // #endregion
+
+  // #region News Items
+  .news-item img {
+    display: inline;
+    max-width: 15%;
+    padding-right: 10px;
+  }
+
+  .news-item button {
+    display: none;
+  }
+  // #endregion
+
+  // #region Right Section
+  #right {
+    display: inline;
+    min-width: 20%;
+    margin: 20px;
+  }
+
+  #information select {
+    background-color: $light-gray;
+    border-radius: 2px;
+    font-weight: 700;
+    padding: 5px;
+    min-width: $side-width;
+  }
+
+  #resources {
+    margin: 20px 0;
+  }
+
+  #resources h3 {
+    background-color: $dark-gray;
+    color: white;
+    font-weight: 799;
+    max-width: $side-width;
+    padding: 5px 10px;
+  }
+
+  #resource-list {
+    border: 2px solid $med-gray;
+    display: flex;
+    flex-direction: column;
+    max-width: $side-width;
+  }
+
+  #resource-list a {
+    border-top: 2px solid $med-gray;
+    padding: 10px;
+  }
+
+  #resource-list a:nth-child(1) {
+    border-top: none;
+  }
+}
+
+// #endregion
+
+// #region Media Large Screen
+@media screen and (min-width: 1007px) {
+  body {
+    // background-color: yellow;
+  }
+
+  #main-video figure img {
+    width: 100vw;
+  }
+}
+
+// #endregion
