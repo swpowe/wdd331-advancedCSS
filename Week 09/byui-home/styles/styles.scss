@@ -1,0 +1,71 @@
+@import "typography";
+@import "icons";
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.school-banner{
+  color: $med-gray;
+  background-color: $light-gray;
+  width: 100vw;
+}
+
+.site-banner__right {
+  height: 20%;
+  color: white;
+}
+
+.ste-banner__left {
+  height: 20%;
+  
+}
+
+
+.site-banner {
+  background-color: #056cb6;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  display: none; //!! small only
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: white;
+}
