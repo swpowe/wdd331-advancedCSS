@@ -1,0 +1,63 @@
+{
+    "hero": {
+      "main": "https://www.byui.edu/images/home_page/Ready%20Round%207/7-Livestock_WebAds-High-Value2%20HOME.jpg",
+      "subSections": [
+        {
+          "image": "https://www.byui.edu/images/homepage-main/pagebuilder/CampusVideos.jpg",
+          "text": "Campus Videos",
+          "link": "http://video.byui.edu/"
+        },
+        {
+          "image": "https://www.byui.edu/images/homepage-main/pagebuilder/PhotoGallery%280%29.jpg",
+          "text": "Photo Gallery",
+          "link": "http://photo.byui.edu/"
+        },
+        {
+          "image": "https://www.byui.edu/images/homepage-main/pagebuilder/ExploreCampus.jpg",
+          "text": "Explore Campus",
+          "link": "http://www.byui.edu/campus-tours"
+        }
+      ]
+    },
+    "calendar": [
+      {
+        "date": "Jun 22",
+        "title": "Devotional - Kristin Ballou"
+      },
+      {
+        "date": "Jun 29",
+        "title": "Devotional - Scott Johnson"
+      },
+      {
+        "date": "Jul 06",
+        "title": "Devotional - Jennifer Jones"
+      },
+      {
+        "date": "Jul 13",
+        "title": "Devotional - Barbara McKenna"
+      }
+    ],
+    "news": [
+      {
+        "date": "JUNE 8, 2021",
+        "link": "https://www.byui.edu/newsroom/06-08-21-fall-semester-2021",
+        "image": "https://www.byui.edu/images/newsroom/Fall%20Semester%202021.jpg",
+        "title": "BYU-Idaho to be Fully Open Fall Semester 2021  ",
+        "excerpt": "The latest information regarding BYU-Idaho's plans for Fall Semester 2021"
+      },
+      {
+        "date": "MAY 14, 2021",
+        "link": "https://www.byui.edu/newsroom/05-14-21-spring-2021-enrollment",
+        "image": "https://www.byui.edu/images/newsroom/Spring%202021%20Enrollmen.jpeg",
+        "title": "BYU-Idaho enrollment continues steady, upward growth",
+        "excerpt": "Spring 2021 enrollment statistics released"
+      },
+      {
+        "date": "APRIL 20, 2021",
+        "link": "https://www.byui.edu/newsroom/4-20-eyring-radio-interview",
+        "image": "https://www.byui.edu/images/newsroom/Screen%20Shot%202021-04-20%20at%2010.34.07%20AM.png",
+        "title": "BYU-Idaho Radio Interview With the Eyrings",
+        "excerpt": "President and Sister Eyring discuss their Spring 2021 devotional message to students."
+      }
+    ]
+  }

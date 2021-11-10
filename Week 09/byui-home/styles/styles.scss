@@ -20,6 +20,12 @@ $byui-blue: #056cb6;
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -33,29 +39,32 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.school-banner{
-  color: $med-gray;
-  background-color: $light-gray;
-  width: 100vw;
-}
 
-.site-banner__right {
-  height: 20%;
-  color: white;
-}
+// My SCSS
 
-.ste-banner__left {
-  height: 20%;
-  
-}
+// .site-banner__right {
+//   height: 20%;
+//   color: white;
+// }
 
+// .ste-banner__left {
+//   height: 20%;
+
+// }
 
 .site-banner {
   background-color: #056cb6;
-  color: white;
   display: flex;
   flex-direction: row;
+  font-size: 1.25rem;
   justify-content: space-between;
+  padding: 8px 10px;
+}
+
+.icon-byui-logo {
+  background-color: black;
+  padding: 10px;
+  margin-left: -10px;
 }
 
 form {
@@ -69,3 +78,34 @@ a {
 span {
   color: white;
 }
+
+// Univ Title
+.school-banner {
+  color: $med-gray;
+  background-color: $light-gray;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.school-banner > h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+}
+
+// main section - left
+// #main-video { //!! not sure I need this
+//   display: flex;
+//   justify-content: center;
+// }
+
+figure {
+  padding: 20px;
+}
+
+// Hide the main video for small screens
+// #main-video {
+//   display: none;
+// }
