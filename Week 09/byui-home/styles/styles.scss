@@ -67,6 +67,7 @@ form {
 }
 
 a {
+  color: $link-blue;
   text-decoration: none;
 }
 
@@ -99,6 +100,15 @@ figure {
   border: 1px solid $med-gray;
   margin-top: -3px;
   padding: 5px;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+span:not(.icon):not(.sr-only) {
+  color: $link-blue;
+  grid-column: 2;
+  justify-self: end;
 }
 
 // #region News Item
@@ -222,11 +232,16 @@ figure {
   #resource-list a {
     border-top: 2px solid $med-gray;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
   }
 
   #resource-list a:nth-child(1) {
     border-top: none;
   }
+
+ 
 }
 
 // #endregion

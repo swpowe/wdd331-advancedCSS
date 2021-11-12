@@ -89,6 +89,9 @@ mainVideo.appendChild(figure)
 data.hero.subSections.forEach(e => {
     let anchor = document.createElement('a');
     anchor.href = e.link
+    let span = document.createElement('span');
+    span.classList.add('icon-angle-right');
+    span.setAttribute("aria-hidden", true);
 
     let figure = document.createElement('figure');
     let figCaption = document.createElement('figcaption');
@@ -101,6 +104,7 @@ data.hero.subSections.forEach(e => {
     figure.appendChild(img)
     figure.appendChild(figCaption)
     anchor.appendChild(figure);
+    figCaption.appendChild(span);
     
     carousel.appendChild(anchor);
 });
