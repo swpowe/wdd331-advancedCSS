@@ -1,0 +1,43 @@
+a {
+    transition: 1s;
+}
+a:link {
+    color: #309;
+}
+a:hover {
+    color: #f0c;
+}
+
+/* body {
+    background: blue;
+    transition: background 1500ms cubic-bezier(.22,.94,.85,.01);
+} */
+
+li {
+    transition: 500ms;
+}
+.fade {
+    opacity: 0;
+}
+
+.pulse-and-fade {
+    animation: pulse 500ms infinite, fade 500ms 8;
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
