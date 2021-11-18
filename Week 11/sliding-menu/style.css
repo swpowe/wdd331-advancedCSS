@@ -1,0 +1,105 @@
+div {
+  width: 50px;
+  height: 60px;
+}
+
+span,
+span::before,
+span::after {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  position: absolute;
+  top: 20px;
+}
+
+span {
+  margin: 15px 5px;
+  top: 20px;
+}
+
+span::before {
+  content: "";
+  top: -23px;
+}
+
+span::after {
+  content: "";
+  top: 10px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.menu-icon:hover span,
+.menu-icon:hover span::before,
+.menu-icon:hover span::after {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: #171717;
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  left: -180px;
+  transition: transform 1s ease;
+}
+
+.sidebar li {
+  list-style-type: none;
+  padding: 10px 40px;
+}
+
+.sidebar li:first-child {
+  margin-top: 40px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.open {
+  transition: transform 1s ease;
+  transform: translateX(125px);
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.close-icon:hover,
+.close-icon:hover::before,
+.close-icon:hover::after {
+  border-left-color: gray;
+  cursor: pointer;
+}
+
+.close-icon::before {
+  content: "";
+  height: 30px;
+  border-left: 2px solid white;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transform: rotate(-45deg);
+}
+
+.close-icon::after {
+  content: "";
+  height: 30px;
+  border-left: 2px solid white;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
