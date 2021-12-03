@@ -1,0 +1,102 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+body {
+  background-color: $body-bg-color;
+}
+
+//change nav bar text color
+// change background color
+
+// .navbar-toggler-icon {
+//   background-color: white;
+//   color: white;
+// }
+
+.jumbotron {
+  text-align: center;
+  background: none;
+}
+
+.carousel-caption {
+  // background-color: white;
+  color: black;
+}
+
+.sectionLight {
+  background-color: #efeeef;
+  padding: 2em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  border: none;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin-top: 20px;
+
+}
+
+button.coolStuffBtn {
+  background-color: red;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+h5.modal-title {
+  margin: auto;
+  padding-left: 60px;
+}
+
+.modal-form-wrapper {
+  padding: 2rem;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 54%;
+}
+
+.footerImg {
+  padding: 15px;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.fa-facebook-official {
+  color: #3b5998;
+}
+
+.fa-google-plus-official {
+  color: #c32f10;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.social-wrapper {
+  margin: auto;
+}
+
