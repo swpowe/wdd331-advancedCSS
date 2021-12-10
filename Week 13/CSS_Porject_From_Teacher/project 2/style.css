@@ -1,0 +1,296 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  color: #555753;
+  background: #fff url(tent-bottom.jpg) no-repeat
+    bottom 100px right 50%;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+h3 {
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #7d775c;
+}
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #b7a5df;
+}
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #d4cddc;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #9685ba;
+}
+abbr {
+  border-bottom: none;
+}
+
+/* specific divs */
+.page-wrapper {
+  /* background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;  */
+  /* padding: 0 175px 0 110px;   */
+  margin: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 50px;
+}
+
+.intro {
+  /* min-width: 470px; */
+  grid-column: 1;
+  width: 100%;
+}
+
+.main {
+  grid-column: 1;
+}
+
+header h1 {
+  background: transparent url(zen-garden_title.jpg) no-repeat top left;
+  background-size: 250px auto;
+  margin-top: 80px;
+  margin-left: -100px;
+  width: 300px;
+  height: 40px;
+  /* display: block; */
+  /* width: 219px; */
+  /* height: 87px; */
+  float: left;
+
+  transform: rotate(-90deg) translate(-30px, 0px);
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header h2 {
+  background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top;
+  background-position: 100%;
+  /* margin-top: 258px;  */
+  /* margin-bottom: 40px;  */
+  /* width: 200px;  */
+  /* width: 80%; */
+  /* width: ; */
+  height: 18px;
+  /* float: right; */
+  /* margin-top: 150px; */
+  padding: 0;
+
+  position: relative;
+  top: 160px;
+  right: 50px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+header {
+  display: block;
+  /* padding-top: 20px; */
+  /* height: 87px; */
+}
+
+.summary {
+  margin-top: 180px;
+  margin-left: 75px;
+  /* clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left; */
+  margin-bottom: 30px;
+  padding: 10px;
+  /* border-bottom: 1px solid black; */
+}
+/*.summary p {
+  
+  /* font: italic 1.1em/2.2 georgia;  */
+  /* text-align: center; 
+}*/
+
+.preamble {
+  background: transparent url(ribon_banner.jpg) no-repeat top center;
+  /* background-position: 10px 0px; */
+  clear: right;
+  padding: 20px 10px 0 10px;
+  background-size: 80% 15px;
+}
+
+.supporting {
+  background: transparent url(ribon_banner.jpg) no-repeat top center;
+  padding-left: 10px;
+  margin-bottom: 40px;
+  background-size: 80% 15px;
+}
+
+
+.participation {
+  background: transparent url(ribon_banner.jpg) no-repeat top center;
+  padding: 20px 10px 0 10px;
+  background-size: 80% 15px;
+}
+
+.benefits {
+  background: transparent url(ribon_banner.jpg) no-repeat top center;
+  padding: 20px 10px 0 10px;
+  background-size: 80% 15px;
+}
+
+.requirements {
+	background: transparent url(ribon_banner.jpg) no-repeat top center;
+	padding: 20px 10px 0 10px;
+  background-size: 80% 15px;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+}
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+.sidebar {
+  /* display: none; */
+
+  /* margin-left: 600px; */
+  position: absolute;
+  top: 20px;
+  right: -110px;
+}
+
+.sidebar:hover {
+	right: -05px;
+}
+
+.sidebar .wrapper {
+  font: 10px verdana, sans-serif;
+  background: transparent url(paper-swatch.jpg) top left
+    repeat-y;
+  padding: 10px;
+  margin-top: 150px;
+  width: 130px;
+}
+.sidebar h3.select {
+  background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top
+    left;
+  margin: 10px 0 5px 0;
+  width: 97px;
+  height: 16px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar h3.archives {
+  background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top
+    left;
+  margin: 25px 0 5px 0;
+  width: 57px;
+  height: 14px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar h3.resources {
+  background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top
+    left;
+  margin: 25px 0 5px 0;
+  width: 63px;
+  height: 10px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  line-height: 1.3em;
+  background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top
+    center;
+  display: block;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+.sidebar li a:link {
+  color: #988f5e;
+}
+.sidebar li a:visited {
+  color: #b3ae94;
+}
+
+.extra1 {
+  background: transparent url(tent.jpg) top left
+    no-repeat;
+  position: absolute;
+  top: 25px;
+  right: 70px;
+  width: 148px;
+  height: 110px;
+}
+
+@media only screen and (min-width: 600px) {
+  header h1 {
+    background: transparent url(zen-garden_title.jpg) no-repeat top left;
+    background-size: 80% auto;
+    margin-top: 80px;
+    margin-left: -100px;
+    width: 60vw;
+    height: 110px;
+    /* display: block; */
+    /* width: 219px; */
+    /* height: 87px; */
+    float: left;
+  
+    transform: rotate(0deg) translate(130px, 0px);
+  
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .summary {
+    margin-top: 180px;
+    margin-left: 0px;
+    /* clear: both; 
+    margin: 20px 20px 20px 10px; 
+    width: 160px; 
+    float: left; */
+    margin-bottom: 30px;
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+  }
+}
